@@ -18,7 +18,6 @@ class App extends Component {
     return (
       <div css={appGlobal}>
         <Header/>
-        <Navigation />
         <main>
           <Route path="/" exact component={HomePage}/>
           <Route path="/profile" component={ProfilePage}/>
