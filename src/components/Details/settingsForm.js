@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import UnoButton from './../UnoButton/index';
 
 class SettingsForm extends Component {
+  
+  componentDidMount() {
+    const url = 'http://localhost:8080/settings'
+    fetch(url).then(response => response.json())
+    .then(response => console.log(response))
+    .catch(console.error)
+    
+  }
   render () {
       return (
         <form>
