@@ -11,7 +11,7 @@ const containerStyle = css`
     width: 40%;
 `;
 
-class SettingsPage extends React.Component {
+class MyPlantsPage extends React.Component {
 
     static defaultProps = {
         title: 'Placeholder'
@@ -40,4 +40,4 @@ class SettingsPage extends React.Component {
       }
 }
 
-export default SettingsPage;
+export default MyPlantsPage;

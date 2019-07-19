@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import { jsx, css } from '@emotion/core'
 
 import HomePage from './views/HomePage';
-import SettingsPage from './views/SettingsPage';
+import MyPlantsPage from './views/MyPlantsPage';
 import Header from './components/Header';
 
 const appGlobal = css`
@@ -23,7 +23,7 @@ class App extends Component {
         <Header/>
         <main css={mainContainer}>
           <Route path="/" exact component={HomePage}/>
-          <Route path="/settings" component={SettingsPage}/>
+          <Route path="/my-plants" component={MyPlantsPage}/>
         </main>
       </div>
     );

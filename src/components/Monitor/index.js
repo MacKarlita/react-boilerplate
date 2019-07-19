@@ -13,7 +13,7 @@ const columns = [
     new ColumnModel("temperature", {Label: 'Temperatura'}),
     new ColumnModel("luminosity", {Label: 'Luminosidad'}),
 ];
-
+let gridName = `myplant-${Math.random()}`
 
 
 class TubularGrid extends React.Component {
@@ -21,7 +21,7 @@ class TubularGrid extends React.Component {
     render() {
         return (
             <div>
-                <DataGrid gridName="myplant"/>
+                <DataGrid gridName={{gridName}}/>
             </div>
         )
     }
