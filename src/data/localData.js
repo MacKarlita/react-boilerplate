@@ -1,17 +1,17 @@
 const localData = [
   {
-    "name": "Sábila",
-    "ground_humidicy": 300.59,
-    "env_humidicy": 300.59,
+    "created_at": "2019-07-19T01:46:03.278Z",
+    "humidity": 300.59,
+    "ground_humidity": 300.59,
     "temperature": 34.42,
-    "luminosity": 35.50
+    "lighting": 35.50
   },
   {
-    "name": "Sansevieria",
-    "ground_humidicy": 45.59,
-    "env_humidicy": 300.59,
+    "created_at": "2019-07-19T01:46:03.278Z",
+    "humidity": 45.59,
+    "ground_humidity": 300.59,
     "temperature": 96.65,
-    "luminosity": 111.11
+    "lighting": 111.11
   }
 ];
 
