@@ -3,6 +3,8 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
+import Monitor from '../components/Monitor';
+
 const containerStyle = css`
     display: inline-block;
     text-align: center;
@@ -31,7 +33,7 @@ class SettingsPage extends React.Component {
         return (
             <section>
                 <div css={containerStyle}>
-                    Placeholder
+                    <Monitor></Monitor>
                 </div>
             </section>
         );
