@@ -2,14 +2,16 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
-import DataGrid, { withRemoteDataSource } from "tubular-react";
+import DataGrid, { withLocalDataSource, withRemoteDataSource } from "tubular-react";
 import { ColumnModel } from 'tubular-common';
 
-
+import localData from '../../data/localData';
 const columns = [
-  new ColumnModel("OrderID"),
-  new ColumnModel("CustomerName"),
-  new ColumnModel("ShipperCity")
+    new ColumnModel("name", {Label: 'Planta'}),
+    new ColumnModel("ground_humidicy", {Label: 'Humedad Tierra'}),
+    new ColumnModel("env_humidicy", {Label: 'Humedad Ambiente'}),
+    new ColumnModel("temperature", {Label: 'Temperatura'}),
+    new ColumnModel("luminosity", {Label: 'Luminosidad'}),
 ];
 
 
@@ -25,6 +27,6 @@ class TubularGrid extends React.Component {
     }
 }
 
-const Monitor = withRemoteDataSource(TubularGrid, columns, "https://tubular.azurewebsites.net/api/orders/paged");
+const Monitor = withLocalDataSource(TubularGrid, columns, localData);
 
 export default Monitor
