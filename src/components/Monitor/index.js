@@ -7,11 +7,11 @@ import { ColumnModel } from 'tubular-common';
 
 import localData from '../../data/localData';
 const columns = [
-    new ColumnModel("name", {Label: 'Planta'}),
-    new ColumnModel("ground_humidicy", {Label: 'Humedad Tierra'}),
-    new ColumnModel("env_humidicy", {Label: 'Humedad Ambiente'}),
-    new ColumnModel("temperature", {Label: 'Temperatura'}),
-    new ColumnModel("luminosity", {Label: 'Luminosidad'}),
+    new ColumnModel("created_at", {Label: 'Created At'}),
+    new ColumnModel("humidity", {Label: 'Humidity'}),
+    new ColumnModel("ground_humidity", {Label: 'Ground Humidity'}),
+    new ColumnModel("temperature", {Label: 'Temperature'}),
+    new ColumnModel("lighting", {Label: 'Lighthing'}),
 ];
 let gridName = `myplant-${Math.random()}`
 

@@ -11,27 +11,20 @@ const containerStyle = css`
     width: 40%;
 `;
 
+const title = css`
+    color: #86af49
+`;
+
 class MyPlantsPage extends React.Component {
 
     static defaultProps = {
-        title: 'Placeholder'
+        title: 'My Plants - Monitor'
     };
-
-    constructor(props) {
-        super(props);
-        // this.state = {
-        //     user: {
-        //         firstName: 'Karla',
-        //         lastName: 'Martin',
-        //         company: 'Unosquare',
-        //         email: 'karla.martin@unosquare.com'
-        //     }
-        // }
-    }
 
     render() {
         return (
             <section>
+                <h1 css={title}>🎍 {this.props.title} 🌷</h1>
                 <div css={containerStyle}>
                     <Monitor></Monitor>
                 </div>
